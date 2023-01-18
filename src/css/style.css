@@ -56,8 +56,8 @@ footer {
 p {
   text-align: justify;
   color:rgb(0, 0, 0);
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-right: 10%;
   margin-left: 10%;
   font-size:1.25em;
@@ -68,8 +68,8 @@ p {
 ul {
   text-align: justify;
   color:rgb(0, 0, 0);
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-right: 10%;
   margin-left: 10%;
   font-size:1.25em;
@@ -109,30 +109,59 @@ h3{
   text-align: center;
   color:rgb(13, 6, 48);
   font-size: 2rem;
+  clear: both;
+  margin-top:100px;
 }
 
 .floating_img_l {
+  margin:20px;
   float:none;
-  width:80%;
+  width:65%;
   height:auto;
-  margin-bottom:50px;
   border: solid 2px rgb(0, 0, 0);
 }
 .floating_img_r {
   float:none;
-  width:80%;
+  width:65%;
   height:auto;
-  margin-bottom:50px;
+  margin:20px;
   border: solid 2px rgb(0, 0, 0);
 }
 
+.img_wrapper{
+  text-align: center
+}
+
+
+
+.title_img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  width: 10rem
+}
+
+.index_img {
+  display:block;
+  margin:20px;
+  margin-left:auto;
+  margin-right:auto;
+  float:none;
+  width:65%;
+  height:auto;
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 25%;
+}
+.index_img_block{text-align: center;}
+
 .indexp {
-  text-align: center;
   font-family: "Courier New", monospace;
+  text-align: center;
   font-size:3rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .nav li {
     width: 10rem;
     border-bottom: none;
@@ -140,10 +169,7 @@ h3{
     line-height: 50px;
     font-size: 1.4em;
   }
-  .indexp {
-    margin-bottom:300px
-  }
- 
+
   .nav li {
     display: inline-block;
     margin-right: -4px;
@@ -151,33 +177,62 @@ h3{
   p{margin-right: 25%;
   margin-left: 25%;}
   
-  .floating_img_l{
-    float: left;
-    width: 400px;
-    height:auto;
-
-    margin-bottom:0px;
-    margin-right:25px;
-  }
-  .floating_img_r{
-    float: right;
-    width: 400px;
-    height:auto;
-
-    margin-bottom:0px;
-    margin-left:25px;
-  }
   ul {
     margin-right: 25%;
     margin-left: 25%;
-  }}
+  }
+  .floating_img_l{
+    float: left;
+    width: 250px;
+    height:auto;
 
+    margin-bottom:25px;
+    margin-right:25px;
+    margin-left: 25%
+  }
+  .floating_img_r{
+    float: right;
+    width: 250px;
+    height:auto;
 
+    margin-bottom:25px;
+    margin-left:25px;
+    margin-right: 25%;
+  }
 .title_img {
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 20rem;
   margin-bottom: 50px;
-  width: 10%
+}
+.index_img{
+  display:block;
+  width:400px;
+  margin-right:auto;
+  margin-left:auto;
 }
 
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .floating_img_l{
+    float: left;
+    width: 30rem;
+    height:auto;
+
+    margin-bottom:25px;
+    margin-right:25px;
+    margin-left: 25%
+  }
+  .floating_img_r{
+    float: right;
+    width: 30rem;
+    height:auto;
+
+    margin-bottom:25px;
+    margin-left:25px;
+    margin-right: 25%;
+  }
+  
+}
