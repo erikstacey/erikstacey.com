@@ -12,8 +12,7 @@ Also see minor projects, packages, and libraries on my <a href="https://github.c
 </h3>
 <div class="img_wrapper"><img class="floating_img_r" src="../img/labeled_pg1.png" alt="pypw_periodogram" style="border: solid 2px rgb(0,0,0)"></div>
 <p style="margin-bottom:120px;">
-    A python package for performing frequency analyses of photometric observations of massive stars. This was originally written to perform the analysis in my thesis, however was also found to be suitable for general application with photometric observations
-    of massive stars. At the core of pywhiten is a sophisticated multi-stage iterative pre-whitening algorithm, which matches or exceeds the accuracy of similar tools (e.g. <a href="http://period04.net/">Period04</a>). This program also fully
+    A python package for performing frequency analyses of photometric observations of massive stars. The core functionality of this program was originally written to perform the analysis in my thesis, however was also found to be suitable for general application with photometric observations. At the core of pywhiten is a sophisticated multi-stage iterative pre-whitening algorithm, which matches or exceeds the accuracy of similar tools (e.g. <a href="http://period04.net/">Period04</a>). This program also fully
     automates the frequency analysis procedure, including error and significance analyses, which reduces the analysis time by up to 80% compared to a manual tool.
 </p>
 
@@ -27,10 +26,17 @@ Also see minor projects, packages, and libraries on my <a href="https://github.c
 
 </p>
 
-<h3>(WIP, 2023) PrintSFF</h3>
-<p>
-    An 11L small form factor (SFF) personal computer case which can be constructed from 3D printed parts and a small quantity of locally-sourced sheet aluminum. 
-    The prototype design efficiently packs a full ATX motherboard and a video card up to 3 slots in thickness and 325 mm in length, both significant challenges in commercially-available SFF PC cases, while occupying a 32 cm x 34 cm x 9.5 cm volume.
-    Furthermore, the 3D printed parts will individually fit into an (18 cm)^3 print volume, permitting printing on small form factor printers (e.g. Prusa MINI/MINI+). This design will be made publicly available on github upon completion.
+<h3><a href="https://github.com/erikstacey/phmin">phmin (Python Package)</a></h3>
+<p style="margin-bottom:120px;">
+    A small python package for performing frequency analysis on time series data using a phase dispersion minimization method. While principally designed and utilized for sparse photometric observations of stars, this package makes no (astronomical) assumptions about
+    the input data and is therefore generally suitable for time series analysis of sparse data, particularly where non-sinusoidal signals are present.
 </p>
+
+<h3><a href="https://github.com/erikstacey/FLDCRV-GRID">FLDCRV-GRID (Fortran Program)</a></h3>
+<p style="margin-bottom:120px;">
+    A Fortran program based on a 1986 FORTRAN77 program FLDCRV, originally authored by John Landstreet. This program utilizes the core functionality of FLDCRV, which models the apparant longitudinal magnetic field of a magnetic star at given rotational phases
+    given a set of physical and geometric parameters, while greatly improving useability and adding the ability to compute models and compare with observations simultaneously.
+</p>
+
+
 
