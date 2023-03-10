@@ -38,5 +38,19 @@ Also see minor projects, packages, and libraries on my <a href="https://github.c
     given a set of physical and geometric parameters, while greatly improving useability and adding the ability to compute models and compare with observations simultaneously.
 </p>
 
+<h3>Veridian Game Engine</h3>
+<p style="margin-bottom:2rem;">
+    A video game engine for 2-D simulation-like games, taking direct inspiration from the highly optimized custom engine implemented in the logistics management and simulation game Factorio. 
+    The fundamental structure of Veridian is written in C++ utilizing the Simple Directmedia Layer 2 library and is based on an entity-component-system (ECS) archtecture. The current implementation 
+    stores entities as sets of data in several component storage classes linked using a unique entity ID, which has the critical advantage of permitting similar data belonging to an arbitrarily large
+    number of game entities to be stored contiguously in memory. Under a traditional object-oriented approach, the CPU will load ALL data about each object into the cache where it can directly operate on it, including data that
+    isn't going to be utilized by the current process. By storing data contiguously in memory by type (e.g. position, velocity) instead of by owner (e.g. blocks belonging to game objects consisting of a position, a velocity, a sprite, an inventory, etc.), the CPU can avoid loading a significant amount
+    of irrelevant data in a single read from main memory, reducing the rate at which it has to pause its operations and perform costly transfers from the main memory to the cache (cache misses). This can lead to dramatic improvements in performance for the most computationally-heavy 
+    behavioural systems in simulation-type games which often operate on a small subset of data from each of a large sample of entities.
+</p>
+<p style="margin-bottom:120px;">
+    This is a passion project focused more on expanding my skills in performance optimization as well as my knowledge of software architectures and design patterns as opposed to game design, as it'd make far more sense to choose an existing ECS framework (e.g. FLECS) if the latter were my primary objective.
+    Nonetheless, in the long term I'm working towards building a simulation game including complex logistics, manufacturing, and environmental control (temperature, pressure) management elements.
+</p>
 
 
