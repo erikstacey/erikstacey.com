@@ -12,8 +12,8 @@ Also see minor projects, packages, and libraries on my <a href="https://github.c
 </h3>
 <div class="img_wrapper"><img class="floating_img_r" src="../img/labeled_pg1.png" alt="pypw_periodogram" style="border: solid 2px rgb(0,0,0)"></div>
 <p style="margin-bottom:120px;">
-    A python package for performing frequency analyses of photometric observations of massive stars. The core functionality of this program was originally written to perform the analysis in my thesis, however was also found to be suitable for general application with photometric observations. At the core of pywhiten is a sophisticated multi-stage iterative pre-whitening algorithm, which matches or exceeds the accuracy of similar tools (e.g. <a href="http://period04.net/">Period04</a>). This program also fully
-    automates the frequency analysis procedure, including error and significance analyses, which reduces the analysis time by up to 80% compared to a manual tool.
+    A flexible python package for conducting Lomb-Scargle-based pre-whitening of time series data. It is distinguished from other, similar tools by a focus on automated pipeline-style analysis and a high degree of flexibility through its extensive configuration system. 
+    The core functionality of this package (which I originally called PyPW) was written to conduct the comprehensive frequency analysis in my MSc thesis, however it was noted during my defence that this would be a more broadly applicable tool and therefore I've converted it to a Python package.
 </p>
 
 <h3><a href="https://saskatoon.ctvnews.ca/flying-high-u-of-s-students-successfully-launch-high-altitude-balloon-into-near-space-1.5963112">SasKatoon Altitude Temperature Experiment (SKATE)</a></h3>
@@ -32,11 +32,6 @@ Also see minor projects, packages, and libraries on my <a href="https://github.c
     the input data and is therefore generally suitable for time series analysis of sparse data, particularly where non-sinusoidal signals are present.
 </p>
 
-<h3><a href="https://github.com/erikstacey/FLDCRV-GRID">FLDCRV-GRID (Fortran Program)</a></h3>
-<p style="margin-bottom:120px;">
-    A Fortran program based on a 1986 FORTRAN77 program FLDCRV, originally authored by John Landstreet. This program utilizes the core functionality of FLDCRV, which models the apparant longitudinal magnetic field of a magnetic star at given rotational phases
-    given a set of physical and geometric parameters, while greatly improving useability and adding the ability to compute models and compare with observations simultaneously.
-</p>
 
 <h3>Veridian Game Engine</h3>
 <p style="margin-bottom:2rem;">
@@ -47,7 +42,7 @@ Also see minor projects, packages, and libraries on my <a href="https://github.c
     The current implementation stores entities as sets of data in several component storage classes linked using a unique entity ID, which has the critical advantage of permitting similar data belonging to an arbitrarily large
     number of game entities to be stored contiguously in memory. Under a traditional object-oriented approach, the CPU will load ALL data about each object into the cache where it can directly operate on it, including data that
     isn't going to be utilized by the current process. By storing data contiguously in memory by type (e.g. position, velocity) instead of by owner (e.g. blocks belonging to game objects consisting of a position, a velocity, a sprite, an inventory, etc.), the CPU can avoid loading a significant amount
-    of irrelevant data in a single read from main memory, reducing the rate at which it has to pause its operations and perform costly transfers from the main memory to the cache (cache misses). This can lead to dramatic improvements in performance for the most computationally-heavy 
+    of irrelevant data in a single read from main memory, reducing the rate at which it has to wait costly transfers from the main memory to the cache (cache misses). This can lead to dramatic improvements in performance for the most computationally-heavy 
     behavioural systems in simulation-type games which often operate on a small subset of data from each of a large sample of entities.
 </p>
 <p style="margin-bottom:120px;">
